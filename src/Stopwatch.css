@@ -1,0 +1,47 @@
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#stopwatch {
+    font-family: 'JetBrains Mono', 'Segoe UI', monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #00ffcc;
+    text-align: center;
+    background: linear-gradient(135deg, #101820, #1b2735);
+    padding: 20px 40px;
+    border-radius: 16px;
+    box-shadow:
+        0 0 20px rgba(0, 255, 204, 0.4),
+        inset 0 0 12px rgba(255, 255, 255, 0.05);
+    user-select: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    background: #00ffcc;
+    color: #1a1a1a;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #00e6b8;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.98);
+}
